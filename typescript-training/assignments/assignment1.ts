@@ -40,7 +40,7 @@ let currentyr: number = 2023;
 console.log(`Current year: ${currentyr}`);
 
 //11.Number of followers on a social media platform: 1,000,000
-let nooffollowers: number = 1,000,000;
+let nooffollowers: string = 1,000,000;
 console.log(`Number of followers on a social media platform: ${nooffollowers}`);
 
 //12.Rating of a movie: 7.5
