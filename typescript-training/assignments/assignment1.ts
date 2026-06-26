@@ -1,6 +1,6 @@
 //1. Temperature of a city in degrees Celsius: 25.5
-let temp: number = 25.5;
-console.log(`Temperature of a city in degrees Celsius: ${temp}`);
+let temp1: number = 25.5;
+console.log(`Temperature of a city in degrees Celsius: ${temp1}`);
 
 //2. Whether a customer has placed an order: true or false
 let isorderplaced: boolean = true;
@@ -40,8 +40,8 @@ let currentyr: number = 2023;
 console.log(`Current year: ${currentyr}`);
 
 //11.Number of followers on a social media platform: 1,000,000
-let nooffollowers: string = 1,000,000;
-console.log(`Number of followers on a social media platform: ${nooffollowers}`);
+let nooffollowers: string = "1,000,000";
+console.log("number of followers",nooffollowers);
 
 //12.Rating of a movie: 7.5
 let rating: number = 7.5;
@@ -81,3 +81,7 @@ console.log(`Distance between two cities: ${disbettwocities}`);
 
 
 
+
+
+let temp : number = 25.5;
+console.log (`Temperature of a city in degrees Celsius: ${temp}`)
