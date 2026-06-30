@@ -1,30 +1,53 @@
-let creditScore : number = 620;
-let income : number = 55000.0;
-let isEmployed : boolean = true;
-let debtToIncomeRatio : number = 35.0;
 
 
+function evaluateLoan(
 
-if (creditScore > 750){
-    console.log("loan is approved");
-} 
-if (creditScore < 650) {
-    console.log("loan is denied");
+    customerName : string,
+    creditScore : number,
+    income : number,
+    isEmployed : boolean,
+    debtToIncomeRatio : number
+): void {
+
+    console.log("Loan Evaluation Result For:" + customerName);
+
+    if(creditScore > 750) {
+
+    console.log("loan is Approved");
+
+} else if(creditScore >= 650) {
+
+    if(income >= 50000) {
+
+        if(isEmployed){
+
+            if(debtToIncomeRatio < 40) {
+                console.log("loan is approved");
+            } else {
+                console.log("loan is denied as DTI ratio is very high");
+            }
+        } else {
+            console.log("loan is denied as customer is unemployed");
+        }
+    } else {
+        console.log("loan is denied as income is less than 50000");
+    }
+} else {
+    console.log("creditscore is below 650 load is denied");
 }
 
-if (creditScore >= 650 && creditScore <= 750){
-    console.log("additional checks are performed");
-    if (income <= 50000 && isEmployed == true && debtToIncomeRatio < 40);{
-    console.log("Loan is approved");
-    if (income <= 50000 && isEmployed != true && debtToIncomeRatio < 40);{
-    console.log("loan is denied");
-    if (income <= 50000 && isEmployed == true && debtToIncomeRatio > 40);{
-        console.log("loan is denied");
-    }
+}
 
-    }
-    }
-    
 
-} 
+evaluateLoan(
+    "John Doe",   // customerName
+    720,          // creditScore
+    55000.0,      // income
+    true,         // isEmployed
+    45.0          //debtToIncomeRatio
+);
+
+
+
+
 
