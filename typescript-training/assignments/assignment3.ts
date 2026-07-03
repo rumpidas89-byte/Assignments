@@ -1,29 +1,33 @@
+// Create array to store student names
+const studentNames: string[] = ['Suresh', 'Mahesh', 'Naresh'];
 
-let studentnames : string[] = ["Suresh","Mahesh","Naresh"];
-let marks : number[] = [75, 80, 82];
-let updatedmarks : number[] = [];
-let totalmarks : number = 0;
-//adding 10 marks to each student
-for (let i : number = 0; i < marks.length; i++);
-{
-    updatedmarks[i] = marks[i] + 10;
-    totalmarks += updatedmarks[i];
+// Create array to store student marks
+const studentMarks: number[] = [75, 80, 82];
 
+// Variable to store total marks for average calculation
+let total: number = 0;
+
+// Create a new array to store updated marks
+const updatedMarks: number[] = [];
+
+// Print heading before displaying updated marks
+console.log("Updated Marks:");
+
+// Loop through studentMarks array using normal for loop
+for (let i : number = 0 ; i < studentMarks.length; i++) {
+
+    // Add 10 marks to each student without modifying original array
+    updatedMarks[i] = studentMarks[i]! + 10;
+
+    // Add updated mark to total for average calculation
+    total += updatedMarks[i]!;
+
+    // Print student name with updated mark
+    console.log(`${studentNames[i]}: ${updatedMarks[i]}`);
 }
-let averagemarks : number = totalmarks / updatedmarks.length;
 
-console.log("Updated Marks :");
+// Calculate average marks
+const average: number = total / updatedMarks.length;
 
-for(let i : number = 0; i < studentnames.length; i++);
-{
-console.log(studentnames[i] + ": " + updatedmarks[i]);
-
-
-}
-console.log("Average Marks:" averagemarks);
-
-
-
-
-
-
+// Print average marks rounded to 1 decimal place
+console.log(`Average Marks: ${average}`);
