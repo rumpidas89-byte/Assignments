@@ -18,6 +18,8 @@ function sumofnumbers(a,b)
 }
 
 
+console.warn("This is a warning message");
+
 
 
 
